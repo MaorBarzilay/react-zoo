@@ -1,16 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Animals from "./components/Animals";
+import AddAnimal from "./components/AddAnimal";
+import AnimalsData from "./components/AnimalsData";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-    <Route path='/' element={<App />}/>
-      <Route path='/animals' element={<h1>Animals Page</h1>}/>
+      <Route path="/" element={<App />} />
+      <Route path="/animals" element={<Animals />} />
+      <Route path="/AllAnimals" element={<AnimalsData />} />
+      <Route path="/animals/addNewAnimal" element={<AddAnimal />} />
     </Routes>
   </BrowserRouter>
 );
