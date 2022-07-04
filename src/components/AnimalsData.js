@@ -4,6 +4,7 @@ import { db } from "../firebase-config";
 import ShowAnimals from "./ShowAnimals";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function AnimalsData() {
   const [animals, setAnimals] = useState([]);
@@ -26,7 +27,7 @@ export default function AnimalsData() {
   }, [animals]);
 
   return (
-    <React.Fragment>
+    <>
       <Navbar />
       <div className="container">
         <h1 style={{ marginTop: "1rem" }}>Here you can see all our animals in the zoo and add a new animal </h1>
@@ -53,6 +54,7 @@ export default function AnimalsData() {
             ))}
         </div>
       </div>
-    </React.Fragment>
+      <Footer />
+    </>
   );
 }

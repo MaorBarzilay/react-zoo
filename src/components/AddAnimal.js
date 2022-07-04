@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { addDoc, collection, doc, Timestamp } from "firebase/firestore";
 import { db } from "../firebase-config";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function AddAnimal() {
   const [category, setCategory] = useState("");
@@ -88,6 +89,7 @@ export default function AddAnimal() {
           </button>
         </form>
       </div>
+      <Footer />
     </>
   );
 }
