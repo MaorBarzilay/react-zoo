@@ -4,7 +4,6 @@ import { db } from "../firebase-config";
 import ShowAnimals from "./ShowAnimals";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
 
 export default function AnimalsData() {
   const [animals, setAnimals] = useState([]);
@@ -54,7 +53,6 @@ export default function AnimalsData() {
             ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

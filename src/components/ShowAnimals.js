@@ -19,7 +19,6 @@ export default function ShowAnimals({
         </h5>
         <h5 className="card-text">Number of legs: {numOfLegs}</h5>
       </div>
-
       <button className="btn btn-success">View Animal</button>
     </div>
   );
