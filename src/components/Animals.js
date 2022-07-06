@@ -4,37 +4,8 @@ import { db } from "../firebase-config";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import ShowAnimals from "./ShowAnimals";
 
 export default function Animals() {
-
-  const [animals, setAnimals] = useState([]);
-
-  // read external data
-  useEffect(() => {
-    const getAnimales = async (db) => {
-      // use the collection in the firestore
-      const animalsCollection = collection(db, "Animals");
-      // gets all the docs of the collection
-      const animalsSnapshot = await getDocs(animalsCollection);
-      const animalsList = await animalsSnapshot.docs.map((doc) => ({
-        id: doc.id,
-        data: doc.data(),
-      }));
-      setAnimals(animalsList);
-    };
-    getAnimales(db);
-  }, [animals]);
-
-
-  // function getUserChoise() {
-  //   let animalTypeArray = document.getElementsByName('animalType')
-  //   for (const animalType of animalTypeArray) {
-  //     setAnimals({ animalType: animalType.value })
-    
-  //   }
-  // }
-
 
   return (
     <>
