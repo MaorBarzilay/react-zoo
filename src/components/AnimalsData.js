@@ -54,11 +54,6 @@ export default function AnimalsData() {
         </div>
           
       </div>
-<<<<<<< HEAD
-      <hr />
-        <Footer />
-=======
->>>>>>> 7503a2882be27d210e9a2c23eaae5b13426156b0
-    </>
+      </>
   );
 }
