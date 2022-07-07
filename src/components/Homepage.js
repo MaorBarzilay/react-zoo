@@ -4,6 +4,7 @@ import Footer from "./Footer";
 
 export default function Homepage() {
   return (
+    <>
       <div className="container">
         <h1 style={{ color: "#0E6655" }}>Welcome To The Zoo</h1>
         <hr />
@@ -19,5 +20,7 @@ export default function Homepage() {
           </Link>
         </div>
       </div>
+      <Footer />
+      </>
   );
 }

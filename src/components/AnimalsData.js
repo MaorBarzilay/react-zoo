@@ -49,12 +49,14 @@ export default function AnimalsData() {
                   isExistInIsrael={animal.data.isExistInIsrael}
                   numOfLegs={animal.data.numOfLegs}
                 />
-
               </div>
             ))}
+            
         </div>
+          
       </div>
-      <Footer />
+      <hr />
+        <Footer />
     </>
   );
 }

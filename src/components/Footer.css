@@ -9,3 +9,9 @@
 .marginerLeft {
   margin-left: 2rem;
 }
+
+.display {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

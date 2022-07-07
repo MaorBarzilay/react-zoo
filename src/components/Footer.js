@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
-        <div style={{ width: "100%", height: "10%", backgroundColor: "#D5DBDB", position: "fixed", left: 0, bottom: 0, right: 0 }}>
+        <div style={{ width: "100%", height: "10%", backgroundColor: "#D5DBDB", position: "fixed",  left: 0, bottom: 0, right: 0 }}>
             <div className='container'>
                 <div className='row'>
 
